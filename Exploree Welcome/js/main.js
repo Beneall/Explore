@@ -155,8 +155,11 @@ jQuery(document).ready(function ($) {
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
     autoplay: true,
+    autoplaySpeed: 2000,
+    autoplayTimeout: 0,
     dots: true,
     loop: true,
+    center: true,
     responsive: {
       0: {
         items: 2

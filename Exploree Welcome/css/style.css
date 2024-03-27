@@ -660,37 +660,119 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #clients {
-  padding: 30px 0;
+  padding: 0px;
 }
 
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
+.Huge-container {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of inline-block elements */
+  margin-top: 80px;
+  padding-top: 8px;
+  background-color: #ffffff;
 }
 
-#clients img:hover {
-  opacity: 1;
-}
-
-#clients .owl-nav,
-#clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#clients .owl-dot {
+.client-job {
+  width: 255px;
+  height: 260px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 5px;
   display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
+  margin-right: 20px; /* Add spacing between client job cards */
+  transition: transform 0.4s ease;
 }
 
-#clients .owl-dot.active {
-  background-color: #50d8af;
+.client-job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 3px rgb(100, 100, 100);
+}
+
+.image-container {
+  height: 100px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 75px;
+}
+
+.image-container img {
+  width: 62%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Fit the image inside the container without distorting */
+}
+
+.job-details {
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.company-info {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.company-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+  
+}
+
+.company-location {
+  font-size: 14px;
+  color: #666666;
+}
+
+.job-status {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.open-jobs {
+  color: #666666;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #8ac1fc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+.btn:hover{
+  box-shadow: 0 6px 3px gray;
+  background-color: #3e9afc;
+}
+
+/* for the dots */
+.owl-dots {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.owl-dot {
+  background-color: #ddd;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px; /* Adjust margin between dots */
+  cursor: pointer;
+}
+
+.owl-dot.active {
+  background-color: #333; /* Adjust active dot color */
 }
 
 /* Our Portfolio Section
