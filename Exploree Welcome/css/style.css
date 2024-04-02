@@ -50,14 +50,14 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #ffffff;
+  background: rgb(78, 78, 78);
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: cubic-bezier(0.10, 0.10, 0.44, 1) ;
 }
 
 .back-to-top:focus {
@@ -663,12 +663,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0px;
 }
 
+
 .Huge-container {
   overflow-x: scroll; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent wrapping of inline-block elements */
-  margin-top: 80px;
+  margin-top: 50px;
   padding-top: 8px;
   background-color: #ffffff;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .client-job {
@@ -745,7 +750,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   background-color: #8ac1fc;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
   
@@ -754,27 +759,77 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0 6px 3px gray;
   background-color: #3e9afc;
 }
+.Huge-container .slider-scrollbar{
+  width: 100%;
+  background: red;
+  align-items: center;
+  opacity: 0;
+}
+.slider-scrollbar .scrollbar-track{
+  height: 3px;
+  width: 100%;
+  background: white;
+  position: relative;
+  border-radius: 4px;
 
-/* for the dots */
-.owl-dots {
-  text-align: center;
-  margin-top: 20px; /* Adjust margin as needed */
+
+}
+.slider-scrollbar:hover .scrollbar-track{
+  height: 4px;
+  
 }
 
-.owl-dot {
-  background-color: #ddd;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px; /* Adjust margin between dots */
+.slider-scrollbar .scrollbar-thumb{
+   position: absolute;
+   height: 100%;
+   width: 20%;
+   background: black;
+   border-radius: inherit;
+   cursor: grab;
+   opacity: 0;
+}
+.slider-scrollbar .scrollbar-thumb:active{
+  cursor: grabbing;
+  height: 4px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px; /* Adjust size as needed */
   cursor: pointer;
+  z-index: 2; /* Ensure it's above other elements */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  outline: none ;
+  height: 100px;
 }
 
-.owl-dot.active {
-  background-color: #333; /* Adjust active dot color */
+.left-chevron {
+  left: 500px; /* Adjust positioning as needed */
+  opacity: 0;
 }
 
+.right-chevron {
+  right: 500px; /* Adjust positioning as needed */
+  opacity: 0;
+}
+.chevron:hover{
+  color: #00ccff;
+}
+
+  
 /* Our Portfolio Section
 --------------------------------*/
 
@@ -1012,7 +1067,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   text-align: center;
 }
-
+.telegram{
+    width:100px;
+    position: absolute;
+    top: 0; 
+    right:200px;
+  }
+ 
+  
 #contact .contact-info i {
   font-size: 48px;
   display: inline-block;
