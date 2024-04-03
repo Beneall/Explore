@@ -13,7 +13,7 @@ const initSlider = () => {
         if (clientJob.scrollLeft >= maxScrollLeft) {
           clientJob.scrollLeft = 0;
         }
-      }, 50); // Adjust scroll interval as needed
+      }, 30); // Adjust scroll interval as needed
     };
   
     const stopAutoScroll = () => {
