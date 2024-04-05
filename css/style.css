@@ -175,7 +175,7 @@ h6 {
   width: 100%;
   height: 60vh;
   position: relative;
-  background: url("../img/intro-carousel/1.jpg") no-repeat;
+  background: url("../img/intro-carousel/characters.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -204,6 +204,7 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  
 }
 
 #intro .intro-content h2 {
@@ -258,7 +259,7 @@ h6 {
 
 #intro #intro-carousel::before {
   content: '';
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(53, 53, 53, 0.7);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -266,16 +267,17 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 7;
+  z-index: 7; 
 }
 
 #intro #intro-carousel .item {
   width: 100%;
   height: 60vh;
   background-size: cover;
-  background-position: center;
+  background-position: center ;
   background-repeat: no-repeat;
   transition-property: opacity;
+  
 }
 
 /*--------------------------------------------------------------
@@ -397,6 +399,7 @@ h6 {
 .nav-menu ul ul {
   margin: 0;
 }
+
 
 /* Mobile Nav Toggle */
 

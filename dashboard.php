@@ -106,12 +106,8 @@ include("auth_session.php");
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Find <span>Jobs from </span><br>your home </h2>
-      <div>
-        <a href="signup-login/Signup-login.html" class="btn-get-started scrollto">Sign-up</a>
-        <a href="signup-login/Signup-login.html" class="btn-projects scrollto">Login</a>
-      </div>
-    </div>
+      <h2>Welcome To <span>ExploreeET</span> <br /> <?php echo $_SESSION['username']; ?>! </h2>
+      
 
     <div id="intro-carousel" class="owl-carousel" >
       <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
