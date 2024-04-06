@@ -3,9 +3,9 @@
 include("auth_session.php");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <title>Exploree consultancy</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -40,9 +40,6 @@ include("auth_session.php");
   ======================================================= -->
 </head>
 
-
-
-
 <body id="body">
 
   <!--==========================
@@ -72,7 +69,7 @@ include("auth_session.php");
 
       <div id="logo" class="pull-left">
         <a href="#body"><img src="img/exploree favicon.PNG" alt="" title="" width="40" height="40"/></a>
-        <h1><a href="#body" class="scrollto" style="color: black;">Exploree </a></h1>
+        <h1><a href="#body" class="scrollto" style="color: black;">Exploree</a></h1>
 
         
 
@@ -83,9 +80,10 @@ include("auth_session.php");
           <li class="menu-active"><a href="#body">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#tender">tenders</a></li>
-          <li><a href="#team"><p>Hey, <?php echo $_SESSION['username']; ?>!</p></a></li>
-          <li><a href="logout.php">Logout</a></li>
+          <li><a href="#tender">Jobs</a></li>
+          <li><a href="#team">Dasboard</a></li>
+          
+          
           <!--<li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -95,7 +93,15 @@ include("auth_session.php");
             </ul>
           </li>-->
           <li><a href="#contact">Contact</a></li>
+          <li>
+      <form action="logout.php" method="post">
+      <button type="submit" class="logout-button">Logout</button>
+       </form>
+    </li>
+    
+
         </ul>
+        
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
@@ -106,15 +112,15 @@ include("auth_session.php");
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Welcome To <span>ExploreeET</span> <br /> <?php echo $_SESSION['username']; ?>! </h2>
-      
+    <h2>Welcome To <span>ExploreeET</span> <br /> <?php echo $_SESSION['username']; ?>! </h2>
+    </div>  
 
     <div id="intro-carousel" class="owl-carousel" >
       <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/4.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/5.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/characters.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/recruitment-jobs.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/employment.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/characters.jpg');"></div>
     </div>
 
   </section><!-- #intro -->
@@ -198,22 +204,46 @@ include("auth_session.php");
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Job available from partnered company</h2>
-          <p class="pclients">Look for a job in the listed companies </p>
-        </div>
-
-        <div class="Huge-container">
-          <i class="fa-solid fa-andle-left"></i>
-          <div class="client-job">
+     <section id="clients" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Job available from partnered company</h2>
+            <p class="pclients">Look for a job in the listed companies </p>
+          </div>
+          <button class="view-jobs-btn"> View more jobs </button>
+          <div class="Huge-container">
+            <div class="chevron left-chevron">
+                &lsaquo;
+            </div>
+            <!-- Client Jobs -->
+            <div class="client-job">
+                <div class="image-container">
+                  <img src="img/Abyssinya.png" alt="">
+                </div>
+                <div class="job-details">
+                  <div class="company-info">
+                    <span class="company-name">Bank of Abyssinya</span><br />
+                    <span class="company-location">Addis Ababa</span>
+                  </div>
+                  <div class="job-status">
+                    <div class="open-jobs">
+                      <span class="">5 open jobs</span>
+                    </div>
+                    <div class="Apply">
+                      <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
+                        <button class="btn">Apply now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="client-job">
               <div class="image-container">
-                <img src="img/Abyssinya.png" alt="">
+                <img src="img/CBE.png" alt="">
               </div>
               <div class="job-details">
                 <div class="company-info">
-                  <span class="company-name">Bank of Abyssinya</span><br />
+                  <span class="company-name">Commercial Bank of Ethiopia</span><br />
                   <span class="company-location">Addis Ababa</span>
                 </div>
                 <div class="job-status">
@@ -230,11 +260,11 @@ include("auth_session.php");
           </div>
           <div class="client-job">
             <div class="image-container">
-              <img src="img/CBE.png" alt="">
+              <img src="img/exploree favicon.PNG" alt="">
             </div>
             <div class="job-details">
               <div class="company-info">
-                <span class="company-name">Commercial Bank of Ethiopia</span><br />
+                <span class="company-name">exploree</span><br />
                 <span class="company-location">Addis Ababa</span>
               </div>
               <div class="job-status">
@@ -251,11 +281,11 @@ include("auth_session.php");
         </div>
         <div class="client-job">
           <div class="image-container">
-            <img src="img/exploree favicon.PNG" alt="">
+            <img src="Images/Abyssinya.png" alt="">
           </div>
           <div class="job-details">
             <div class="company-info">
-              <span class="company-name">exploree</span><br />
+              <span class="company-name">Commercial Bank of Ethiopia</span><br />
               <span class="company-location">Addis Ababa</span>
             </div>
             <div class="job-status">
@@ -269,97 +299,83 @@ include("auth_session.php");
               </div>
             </div>
           </div>
-      </div>
-      <div class="client-job">
-        <div class="image-container">
-          <img src="Images/Abyssinya.png" alt="">
         </div>
-        <div class="job-details">
-          <div class="company-info">
-            <span class="company-name">Commercial Bank of Ethiopia</span><br />
-            <span class="company-location">Addis Ababa</span>
+        <div class="client-job">
+          <div class="image-container">
+            <img src="Images/Abyssinya.png" alt="">
           </div>
-          <div class="job-status">
-            <div class="open-jobs">
-              <span class="">5 open jobs</span>
+          <div class="job-details">
+            <div class="company-info">
+              <span class="company-name">Commercial Bank of Ethiopia</span><br />
+              <span class="company-location">Addis Ababa</span>
             </div>
-            <div class="Apply">
-              <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
-                <button class="btn">Apply now</button>
+            <div class="job-status">
+              <div class="open-jobs">
+                <span class="">5 open jobs</span>
+              </div>
+              <div class="Apply">
+                <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
+                  <button class="btn">Apply now</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="client-job">
-        <div class="image-container">
-          <img src="Images/Abyssinya.png" alt="">
-        </div>
-        <div class="job-details">
-          <div class="company-info">
-            <span class="company-name">Commercial Bank of Ethiopia</span><br />
-            <span class="company-location">Addis Ababa</span>
+        <div class="client-job">
+          <div class="image-container">
+            <img src="Images/Abyssinya.png" alt="">
           </div>
-          <div class="job-status">
-            <div class="open-jobs">
-              <span class="">5 open jobs</span>
+          <div class="job-details">
+            <div class="company-info">
+              <span class="company-name">Commercial Bank of Ethiopia</span><br />
+              <span class="company-location">Addis Ababa</span>
             </div>
-            <div class="Apply">
-              <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
-                <button class="btn">Apply now</button>
+            <div class="job-status">
+              <div class="open-jobs">
+                <span class="">5 open jobs</span>
+              </div>
+              <div class="Apply">
+                <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
+                  <button class="btn">Apply now</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="client-job">
-        <div class="image-container">
-          <img src="Images/Abyssinya.png" alt="">
-        </div>
-        <div class="job-details">
-          <div class="company-info">
-            <span class="company-name">Commercial Bank of Ethiopia</span><br />
-            <span class="company-location">Addis Ababa</span>
+        <div class="client-job">
+          <div class="image-container">
+            <img src="Images/Abyssinya.png" alt="">
           </div>
-          <div class="job-status">
-            <div class="open-jobs">
-              <span class="">5 open jobs</span>
+          <div class="job-details">
+            <div class="company-info">
+              <span class="company-name">Commercial Bank of Ethiopia</span><br />
+              <span class="company-location">Addis Ababa</span>
             </div>
-            <div class="Apply">
-              <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
-                <button class="btn">Apply now</button>
+            <div class="job-status">
+              <div class="open-jobs">
+                <span class="">5 open jobs</span>
+              </div>
+              <div class="Apply">
+                <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
+                  <button class="btn">Apply now</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="client-job">
-        <div class="image-container">
-          <img src="Images/Abyssinya.png" alt="">
-        </div>
-        <div class="job-details">
-          <div class="company-info">
-            <span class="company-name">Commercial Bank of Ethiopia</span><br />
-            <span class="company-location">Addis Ababa</span>
-          </div>
-          <div class="job-status">
-            <div class="open-jobs">
-              <span class="">5 open jobs</span>
-            </div>
-            <div class="Apply">
-              <div class="bg-green-200 text-center text-green-600 font-bold py-1.5">
-                <button class="btn">Apply now</button>
-              </div>
+              <!-- Client Job items -->
             </div>
           </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+          <div class="chevron right-chevron">
+            &rsaquo;
         </div>
-      </div>
-      <i class="fa-solid fa-andle-right"></i>
-      
-      </div>
-
-      </div>
-    </section> <!-- #clients -->
+        </div>
+      </section><!-- #clients -->
 
     <!--==========================
       Our Portfolio Section
@@ -546,11 +562,12 @@ include("auth_session.php");
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="cta-title"> Join our telegram </h3>
+            <p class="cta-text"> Join our telegram for more information. </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <img class="telegram" src="img/Telegram.png" >
+            <a class="cta-btn align-middle" href="https://t.me/ExploreeEt"> Join </a>
           </div>
         </div>
 
@@ -641,7 +658,7 @@ include("auth_session.php");
       <div class="container">
         <div class="section-header">
           <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <p>Contact us for any questions</p>
         </div>
 
         <div class="row contact-info">
@@ -650,7 +667,7 @@ include("auth_session.php");
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <address>22Megenagna AddisAbaba,Ethiopia</address>
             </div>
           </div>
 
@@ -658,7 +675,7 @@ include("auth_session.php");
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+155895548855">+251909090909</a></p>
             </div>
           </div>
 
@@ -666,7 +683,7 @@ include("auth_session.php");
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@example.com">exploreeET@gmail.com</a></p>
             </div>
           </div>
 
@@ -674,7 +691,7 @@ include("auth_session.php");
       </div>
 
       <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       </div>
 
       <div class="container">
@@ -748,8 +765,9 @@ include("auth_session.php");
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/chivron.js"></script>
 
 </body>
 </html>
-
+ 
 

@@ -299,6 +299,7 @@ h6 {
   top: 100%;
   left: 0;
   z-index: 99;
+  
 }
 
 .nav-menu li {
@@ -348,12 +349,13 @@ h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+  
 }
 
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 10px 8px;
+  padding: 13px 8px;
   text-decoration: none;
   display: inline-block;
   color: #000000;
@@ -399,6 +401,25 @@ h6 {
 .nav-menu ul ul {
   margin: 0;
 }
+
+.logout-button{
+  padding: 2px 7px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d2e88;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 11px;
+ 
+}
+.logout-button:hover{
+  background-color: #081e5b;
+}
+
 
 
 /* Mobile Nav Toggle */
@@ -1215,7 +1236,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 20px 0;
     height: 74px;
   }
-
+ 
   #header #logo h1 {
     font-size: 34px;
   }
@@ -1239,6 +1260,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   #about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
+  }
+  .logout-button{
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    
   }
 }
 
