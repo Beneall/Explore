@@ -1,0 +1,157 @@
+/*-------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  #logo {
+    margin-bottom: 10px;
+  }
+  
+  .nav-menu {
+    justify-content: center;
+  }
+}
+
+
+
+
+/* Styles for filter form */
+
+.filter-holder{
+  
+    width: 31%;
+    padding: 80px 20px 20px;
+    border: 1px solid #f80000;
+    background-color: gray;
+    height: 102vh; 
+    float: left;
+    top: 0;
+}
+ .filter-section{
+    margin-top: 20px;
+ }
+.filter-heading{
+  text-align: center;
+  color: white;
+}
+.filter-form {
+  max-width: 400px;
+  margin-left: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+.filter-group{
+   margin-top: 9px;
+}
+
+.form-group {
+  margin-bottom: 150px;
+  
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input[type="text"]{
+  width: 94.3%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 23px;
+}
+.status-buttons{
+   margin-top: 10px;
+   margin-left: 20px;
+}
+.CV-buttons{
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.custom{
+     margin-left: 10px;
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 5p;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
