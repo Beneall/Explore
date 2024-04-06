@@ -664,6 +664,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clients {
   padding: 0px;
+  margin-top: 45px;
 }
 
 .Huge-container {
@@ -780,8 +781,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #333; /* Adjust active dot color */
 }
 
+
+.view-jobs-btn{
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #081e5b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute;
+  right: 90px;
+}
+.view-jobs-btn:hover{
+  box-shadow: 0 4px 3px gray;
+  background-color: #0672e6;
+}
+
 /* Our Portfolio Section
---------------------------------*/
+--------------------------------
 
 #portfolio {
   background: #fff;
@@ -837,10 +859,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+}*/
 
 /* Testimonials Section
---------------------------------*/
+--------------------------------
 
 #testimonials {
   padding: 30px 0;
@@ -912,7 +934,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .owl-dot.active {
   background-color: #50d8af;
-}
+}*/
 
 /* Call To Action Section
 --------------------------------*/
@@ -921,6 +943,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #081e5b;
   background-size: cover;
   padding: 40px 0;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 #call-to-action .cta-title {
@@ -956,9 +980,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .telegram {
   position: absolute;
-  width: 250px; 
-  right: 150px;
-  top: -30px;
+  width: 150px; 
+  right: 175px;
+  top: 8px;
   
 }
 
@@ -1022,6 +1046,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
   padding: 30px 0;
+  margin-top: 10px ;
+  margin-bottom: 10px;
 }
 
 #contact .contact-info {
