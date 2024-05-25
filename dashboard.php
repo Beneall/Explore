@@ -210,11 +210,11 @@ include("auth_session.php");
             <h2>Job available from partnered company</h2>
             <p class="pclients">Look for a job in the listed companies </p>
           </div>
-          <button class="view-jobs-btn"> View more jobs </button>
+          <a href="jobs.html"><button class="view-jobs-btn">View more jobs </button></a>
           <div class="Huge-container">
             <div class="chevron left-chevron">
                 &lsaquo;
-            </div>
+            </div>    
             <!-- Client Jobs -->
             <div class="client-job">
                 <div class="image-container">
