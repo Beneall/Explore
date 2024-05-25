@@ -81,7 +81,7 @@ include("auth_session.php");
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#tender">Jobs</a></li>
-          <li><a href="#team">Dasboard</a></li>
+          <li><a href="moredashboard copy.html">Dasboard</a></li>
           
           
           <!--<li class="menu-has-children"><a href="">Drop Down</a>
