@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="assets/images/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -34,12 +34,13 @@
         </div>
     </div>  
     <!-- ***** Preloader End ***** -->
+
     <header id="header">
       <div class="container">
   
         <div id="logo" class="pull-left">
           <a href="#body"><img src="img/exploree favicon.PNG" alt="" title="" width="40" height="40"/></a>
-          <h1><a href="#body" class="scrollto" style="color: black;">Exploree </a></h1>
+          <h1><a href="#body" class="scrollto" style="color: black;">Exploree</a></h1>
   
           
   
@@ -50,8 +51,10 @@
             <li class="menu-active"><a href="#body">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#tender">tenders</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#tender">Jobs</a></li>
+            <li><a href="moredashboard copy.html">Dasboard</a></li>
+            
+            
             <!--<li class="menu-has-children"><a href="">Drop Down</a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>
@@ -61,7 +64,15 @@
               </ul>
             </li>-->
             <li><a href="#contact">Contact</a></li>
+            <li>
+        <form action="logout.php" method="post">
+        <button type="submit" class="logout-button">Logout</button>
+         </form>
+      </li>
+      
+  
           </ul>
+          
         </nav><!-- #nav-menu-container -->
       </div>
     </header><!-- #header -->
@@ -74,12 +85,8 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Find <span>Jobs from </span><br>your home </h2>
-      <div>
-        <a href="signup.php" class="btn-get-started scrollto">Sign-up</a>
-        <a href="login.php" class="btn-projects scrollto">Login</a>
-      </div>
-    </div>
+    <h2>Welcome To <span>ExploreeET</span> <br /> <?php echo $_SESSION['username']; ?>! </h2>
+    </div>  
 
     <div id="intro-carousel" class="owl-carousel" >
       <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
@@ -89,7 +96,10 @@
       <div class="item" style="background-image: url('img/intro-carousel/characters.jpg');"></div>
     </div>
 
+    
+
   </section><!-- #intro -->
+
   <!--==========================
       Call To Action Section
     ============================-->
@@ -278,7 +288,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="product-item">
-                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <a href="job-details.html"><img src="Jobs/images/product-1-370x270.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
 
@@ -312,7 +322,7 @@
 
               <div class="col-md-6">
                 <div class="product-item">
-                  <a href="job-details.html"><img src="Jobs/images/product-1-370x270.jpg" alt="" ></a>
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
 
