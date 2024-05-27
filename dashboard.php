@@ -42,24 +42,15 @@ include("auth_session.php");
 
 <body id="body">
 
-  <!--==========================
-    Top Bar
-  ============================-->
-  <!--<section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-    </div>
-  </section>--> 
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
 
   <!--==========================
     Header
@@ -210,7 +201,7 @@ include("auth_session.php");
             <h2>Job available from partnered company</h2>
             <p class="pclients">Look for a job in the listed companies </p>
           </div>
-          <a href="jobs.html"><button class="view-jobs-btn">View more jobs </button></a>
+          <a href="Jobs.html"><button class="view-jobs-btn"> View more jobs </button></a>
           <div class="Huge-container">
             <div class="chevron left-chevron">
                 &lsaquo;
@@ -766,6 +757,10 @@ include("auth_session.php");
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="js/chivron.js"></script>
+
+  <!-- Additional js -->
+  <script src="Jobs/js/custom.js"></script>
+    <script src="Jobs/js/owl.js"></script>
 
 </body>
 </html>

@@ -1,67 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="css/jobs.css">
-<body>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>PHPJabbers.com | Free Job Agency Website Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Jobs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="Jobs/css/fontawesome.css">
+    <link rel="stylesheet" href="Jobs/css/style.css">
+    <link rel="stylesheet" href="Jobs/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <header id="header">
+      <div class="container">
   
-  <header id="header">
-    <div class="container">
-      <div id="logo" class="pull-left">
-        <a href="#body"><img src="Images/exploree favicon.PNG" alt="" title="" width="40" height="40"/></a>
-        <h1><a href="#body" class="scrollto" style="color: black;">Exploree </a></h1>
+        <div id="logo" class="pull-left">
+          <a href="#body"><img src="img/exploree favicon.PNG" alt="" title="" width="40" height="40"/></a>
+          <h1><a href="#body" class="scrollto" style="color: black;">Exploree</a></h1>
+  
+          
+  
       </div>
   
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#tender">tenders</a></li>
-          <li><a href="#team">Team</a></li>
-          <!--<li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>-->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#body">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tender">Jobs</a></li>
+            <li><a href="moredashboard copy.html">Dasboard</a></li>
+            
+            
+            <!--<li class="menu-has-children"><a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li>-->
+            <li><a href="#contact">Contact</a></li>
+            <li>
+        <form action="logout.php" method="post">
+        <button type="submit" class="logout-button">Logout</button>
+         </form>
+      </li>
+      
+  
+          </ul>
+          
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
   
 
-  <!-- filter forms -->
-  <div class="filter-holder">
-    <h1 class="filter-heading" > 
-      Filter your jobs
-     </h1>
-  <form id="jobFilterForm" class="filter-form">
-    <!-- Date Posted Filter -->
-    <div class="filter-group">
-      <label for="datePosted">Date Posted</label>
-      <select id="datePosted">
-        <option value="" disabled selected>Select</option>
-        <option value="yesterday">Yesterday</option>
-        <option value="today">Today</option>
-        <option value="thisWeek">This Week</option>
-        <option value="thisMonth">This Month</option>
-        <option value="thisYear">This Year</option>
-      </select>
+    
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-content">
+    <h2>Welcome To <span>ExploreeET</span> <br /> <?php echo $_SESSION['username']; ?>! </h2>
+    </div>  
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/characters.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/recruitment-jobs.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/employment.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/characters.jpg');"></div>
     </div>
-  
+
+    
+
+  </section><!-- #intro -->
+
+  <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title"> Join our telegram </h3>
+            <p class="cta-text"> Join our telegram for more information. </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <img class="telegram" src="Images/Telegram.png" >
+            <a class="cta-btn align-middle" href="https://t.me/ExploreeEt"> Join </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+             <div class="contact-form">
+                <form action="#">
+                  <h2 class="filter-heading" > 
+                    Filter your jobs
+                   </h2>
+                   <br>
+                   <br>
+                <form id="jobFilterForm" class="filter-form">
+                  <!-- Date Posted Filter -->
+                  <div class="filter-group">
+                    <label for="datePosted">Date Posted</label>
+                    <select id="datePosted">
+                      <option value="" disabled selected>Select</option>
+                      <option value="yesterday">Yesterday</option>
+                      <option value="today">Today</option>
+                      <option value="thisWeek">This Week</option>
+                      <option value="thisMonth">This Month</option>
+                      <option value="thisYear">This Year</option>
+                    </select>
+                  </div>
+
+                
     <!-- Job Title Filter -->
     <div class="filter-group">
       <label for="jobTitle">Job Title </label>
       <select id="jobType">
-        <option value="" >Select</option>
-                <option value="762">Accounting and Finance</option>
+     <option value="" >Select</option>
+     <option value="762">Accounting and Finance</option>
 			<option value="763">Admin, Secretarial and Clerical</option>
 			<option value="764">Agriculture</option>
 			<option value="765">Automotive</option>
@@ -114,7 +203,8 @@
 			<option value="858">Strategic Planning</option>
       </select>
     </div>
-    <!-- Job Type Filter -->
+
+     <!-- Job Type Filter -->
     <div class="filter-group">
       <label for="jobType">Job Type </label>
       <select id="jobType">
@@ -127,7 +217,8 @@
 			<option value="691">Casual</option>
       </select>
     </div>
-    <!-- Carrer level -->
+
+     <!-- Carrer level -->
     <div class="filter-group">
       <label for="jobType"> Carrer Level </label>
       <select id="jobType">
@@ -139,7 +230,8 @@
         <option value="667">Senior Executive(CEO, Country Manager, General Manager)</option>
       </select>
     </div>
-    <!-- Region Filter -->
+
+              <!-- Region Filter -->
     <div class="filter-group">
       <label for="region">Region </label>
       <select id="region">
@@ -157,32 +249,181 @@
         <option value="Tigray">Tigray</option>
       </select>
     </div>
-  
-    <!-- Job Status Filter -->
-      <div class="filter-section">
-        <label>Job Status </label>
-        <div class="status-buttons">
-          <button id="allJobs">All Jobs</button>
-          <button id="openJobs">Open Jobs</button>
-          <button id="closedJobs">Closed Jobs</button>
+
+
+                 <h5 style="margin-bottom: 15px"> Job status </h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Open</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>closed</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small> All jobs</small>
+                      </label>
+                 </div>
+
+                 <br>
+
+                
+            </form>
+             </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Abyssinya Bank</h4></a>
+
+                    <h4><small><i class="fa fa-briefcase"></i> Job name <br> <strong><i class="fa fa-building"></i> Building Name</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> employment type</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> location</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <ul class="pages">
+                  <li class="active"><a href="#">1</a></li>
+                  <li ><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-     
-    <!-- Search Button -->
-    <button type="submit">Search</button>
-  </form>
-  <div class="CV-section">
-    <label> Create CV Using Our CV Builder or upload your CV
-            to get discovered </label>
-    <div class="CV-buttons">
-      <button class="upload"> Upload your CV</button>
-      <button class="custom"> Make your custom CV</button>
     </div>
-  </div>
-  
-</div>
 
-      
-  <script src="forex.js"></script>
-</body>
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Exploree</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+         
+          Designed by <a href="#"><strong>NB tech industries</strong></a>
+        </div>
+      </div>
+    </footer><!-- #footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Jobs/vendor/jquery/jquery.min.js"></script>
+    <script src="Jobs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="Jobs/js/custom.js"></script>
+    <script src="Jobs/js/owl.js"></script>
+  </body>
+
 </html>
